@@ -22,10 +22,10 @@ class APIClient:
         return self.client.get(url, params=params)
 
     def post(self, url : URL | str,
-            params : QueryParams | None = None,
-             json : Any = None,
-             data : RequestData = None,
-             files : RequestFiles = None
+            params: QueryParams | None = None,
+             json: Any = None,
+             data: RequestData = None,
+             files: RequestFiles = None
     ) -> Response:
         """
         Выполняет POST-запрос.

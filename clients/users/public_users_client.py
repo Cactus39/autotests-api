@@ -7,11 +7,11 @@ class CreateUserRequestDictionary(TypedDict):
     """
     Описание структуры запроса на создания пользователя.
     """
-    email       : str
-    password    : str
-    lastName    : str
-    firstName   : str
-    middleName  : str
+    email: str
+    password: str
+    lastName: str
+    firstName: str
+    middleName: str
 
 class PublicUsersClient(APIClient):
     """
@@ -22,7 +22,7 @@ class PublicUsersClient(APIClient):
         Метод выполняет аутентификацию пользователя.
 
         :param request: Словарь с email, password, lastName, firstName и middleName.
-        :return: Ответ от сервера в виде объекта httpx.Response
+        :return: Ответ от сервера в виде объекта httpx.Response.
         """
         return self.post(url="/api/v1/users", json=request)
 
