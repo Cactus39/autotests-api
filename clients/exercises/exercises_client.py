@@ -62,7 +62,7 @@ class ExercisesClient(APIClient):
         :param request: Словарь с title, courseId, maxScore, minScore, orderIndex, description, estimatedTime
         :return:  Ответ от сервера в виде объекта httpx.Response.
         """
-        return self.post(url="/api/v1/exercises/", json=request)
+        return self.post(url="/api/v1/exercises", json=request)
 
     def update_exercise_api(self, exercise_id: str, request: UpdateExerciseRequestDict) -> Response:
         """
