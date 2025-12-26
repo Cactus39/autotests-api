@@ -1,6 +1,4 @@
 from pydantic import BaseModel, EmailStr, Field
-from clients.users.public_users_client import get_public_users_client
-
 
 class UpdateUserRequestSchema(BaseModel):
     """
