@@ -1,18 +1,18 @@
 import httpx
-from tools.fake_email import get_random_email
+from tools.fakers import fake 
 url_base = f"http://localhost:8000/api/v1"
 url_login = "authentication/login"
 url_user = "users"
 
 payload_user = {
-  "email": get_random_email(),
+  "email": fake.email(),
   "password": "password",
   "lastName": "string",
   "firstName": "string",
   "middleName": "string"
 }
 payload_patch_user = {
-  "email": get_random_email(),
+  "email": fake.email(),
   "lastName": "string",
   "firstName": "string",
   "middleName": "string"
