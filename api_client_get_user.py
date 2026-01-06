@@ -21,23 +21,3 @@ get_user_response_data = private_client.get_user(user_id)
 print("Get user data:", get_user_response_data)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
