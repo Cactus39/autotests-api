@@ -4,7 +4,7 @@ from clients.authentication.authentication_client import get_authentication_clie
 from clients.authentication.authentication_schema import LoginRequestSchema
 
 class AuthenticationUserSchema(BaseModel):
-    email: EmailStr
+    email: str
     password: str
 
 def get_private_http_client(user: AuthenticationUserSchema) -> Client:
