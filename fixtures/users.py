@@ -1,7 +1,6 @@
 import pytest
 from pydantic import BaseModel
 from clients.users.public_users_client import get_public_users_client, PublicUsersClient
-from clients.authentication.authentication_client import get_authentication_client, AuthenticationClient
 from clients.users.user_schema import CreateUserRequestSchema, CreateUserResponseSchema
 from clients.users.private_users_client import get_private_users_client, AuthenticationUserSchema, PrivateUsersClient
 
@@ -24,11 +23,6 @@ class UserFixture(BaseModel):
 def public_users_client() -> PublicUsersClient:
     # Создаем новый API клиент для работы с аутентификацией
     return get_public_users_client()
-
-@pytest.fixture(scope="function")
-def authentication_client() -> AuthenticationClient:
-    # Создаем новый API клиент для работы с публичным API пользователей
-    return get_authentication_client()
 
 @pytest.fixture(scope="function")
 def private_users_client(function_user: UserFixture) -> PrivateUsersClient:
