@@ -35,3 +35,4 @@ def function_user(public_users_client: PublicUsersClient) -> UserFixture:
     response = public_users_client.create_user(request)
     return UserFixture(request=request, response=response)
 
+

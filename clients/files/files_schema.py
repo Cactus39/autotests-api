@@ -4,6 +4,7 @@ from tools.fakers import fake
 class CreateFileRequestSchema(BaseModel):
     """
     Описание структуры запроса на создание файла.
+    upload_file: path to file for example "./testdata/test_file.png"
     """
     filename: str = Field(default_factory=lambda :f"{fake.uuid4()}.png")
     directory: str = Field(default="test_dir")
