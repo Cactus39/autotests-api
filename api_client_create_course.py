@@ -21,6 +21,7 @@ create_file_request = CreateFileRequestSchema(upload_file="./testdata/test_file.
 files_client = get_files_client(authentication_user)
 create_file_response = files_client.create_file(create_file_request)
 print("Create file data:", create_file_response)
+print("url:", create_file_response.file.url)
 
 
 ### Creating course

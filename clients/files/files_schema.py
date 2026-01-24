@@ -15,12 +15,18 @@ class FileSchema(BaseModel):
     Описание структуры файла.
     """
     id: str
-    url: HttpUrl
     filename: str
     directory: str
+    url: HttpUrl
 
 class CreateFileResponseSchema(BaseModel):
     """
     Описание структуры ответа создания файла.
+    """
+    file: FileSchema
+
+class GetFileResponseSchema(BaseModel):
+    """
+    Описание структуры запроса получения файла.
     """
     file: FileSchema
