@@ -26,7 +26,7 @@ class TestCourses:
         # Проверяем, что данные в ответе соответствуют запросу
         asser_update_course_response(request, response_data)
         # Валидируем JSON-схему ответа
-        validate_json_schema(response_data.model_json_schema, response.json())
+        validate_json_schema(response.json(), response_data.model_json_schema())
 
     def test_get_courses(self, function_course: CourseFixture, function_user: UserFixture, courses_client: CoursesClient):
         # Формируем параметры запроса, передавая user_id
@@ -41,7 +41,7 @@ class TestCourses:
         # Проверяем, что список курсов соответствует ранее созданным курсам
         assert_get_courses_response(response_data, [function_course.response])
         # Проверяем соответствие JSON-ответа схеме
-        validate_json_schema(response_data.model_json_schema, response.json())
+        validate_json_schema(response.json(), response_data.model_json_schema())
 
     def test_create_course(self, function_user: UserFixture, function_file: FileFixture, courses_client: CoursesClient):
         # Формируем параметры запроса, передавая user_id и file_id
@@ -56,5 +56,5 @@ class TestCourses:
         # Проверяем, что данные в ответе соответствуют запросу
         assert_create_course_response(request=request, response=response_data)
         # Проверяем соответствие JSON-ответа схеме
-        validate_json_schema(response_data.model_json_schema, response.json())
+        validate_json_schema(response.json(), response_data.model_json_schema())
 
