@@ -43,7 +43,7 @@ class CoursesClient(APIClient):
         :param request: Словарь с title, maxScore, minScore, description, estimatedTime.
         :return: Ответ от сервера в виде объекта httpx.Response.
         """
-        return self.patch(url=f"/api/v1/courses/{course_id}", json=request.model_dump(by_alias=True))
+        return self.patch(url=f"/api/v1/courses/{course_id}", json=request.model_dump(by_alias=True, exclude_none=True))
 
     def delete_course_api(self, course_id: str) -> Response:
         """
