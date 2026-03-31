@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host' : 'localhost:8000' \
+ -H 'accept' : '*/*' \
+ -H 'accept-encoding' : 'gzip, deflate' \
+ -H 'connection' : 'keep-alive' \
+ -H 'user-agent' : 'python-httpx/0.28.1' \
+ -H 'authorization' : 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTMxVDE4OjIwOjE3LjY2MTU4NSIsInVzZXJfaWQiOiIwNjVkOTc3MS0wYjQ4LTQ1NjItOWZkZi1mNmE0NDM2NjFiZjMifQ.i4IkZqt1YLO-p-PpeJ0DeBYGWXTiVSNTdVLg2hN6cLQ' \
+ -H 'content-length' : '327' \
+ -H 'content-type' : 'application/json' \
+ -d '{"title":"Third carry middle speak network.","maxScore":50,"minScore":8,"description":"Shoulder head PM. Capital trip song civil which part at exist.\nIncrease feeling other message born.","estimatedTime":"6 weeks","previewFileId":"15ef05de-6cd8-4455-b38a-51906bc153ed","createdByUserId":"065d9771-0b48-4562-9fdf-f6a443661bf3"}'

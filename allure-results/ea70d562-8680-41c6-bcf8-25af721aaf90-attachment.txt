@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host' : 'localhost:8000' \
+ -H 'accept' : '*/*' \
+ -H 'accept-encoding' : 'gzip, deflate' \
+ -H 'connection' : 'keep-alive' \
+ -H 'user-agent' : 'python-httpx/0.28.1' \
+ -H 'authorization' : 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTMxVDE4OjIyOjIxLjMyNzQyMSIsInVzZXJfaWQiOiI3MzQxYTAyOS1jNzJiLTRjNzYtOTg4Zi00YzVmN2Q2YTY2OTcifQ.QQuuiwA2sO4OkPas_YKndtcQjEZGiQFTdxAaJAXRats' \
+ -H 'content-length' : '406' \
+ -H 'content-type' : 'application/json' \
+ -d '{"title":"Expert seven executive.","maxScore":98,"minScore":21,"description":"Require letter game age new affect represent.\nThought force policy walk. Kid do evening land light safe. May system study cup win speak structure last.\nGas data contain bring word skill.","estimatedTime":"7 weeks","previewFileId":"10d7f644-cf9f-4e33-9fe2-51586a11078d","createdByUserId":"7341a029-c72b-4c76-988f-4c5f7d6a6697"}'

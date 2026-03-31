@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host' : 'localhost:8000' \
+ -H 'accept' : '*/*' \
+ -H 'accept-encoding' : 'gzip, deflate' \
+ -H 'connection' : 'keep-alive' \
+ -H 'user-agent' : 'python-httpx/0.28.1' \
+ -H 'authorization' : 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTMxVDE4OjIyOjIyLjU4NDAxNSIsInVzZXJfaWQiOiI0Y2I2MjM1MC1jYWY4LTQ3MjAtOWU5Yy04NmM5ZWU2YWU0MTYifQ.AUQwkaaGfaw0I_Kgn8A8IFCo4hQNhhWHlBAM6AK-M6Q' \
+ -H 'content-length' : '421' \
+ -H 'content-type' : 'application/json' \
+ -d '{"title":"Parent politics skin language.","maxScore":92,"minScore":13,"description":"Thus west who ground each pressure. Certainly skin big speech crime.\nLawyer sure commercial director dinner generation against. Party director item the. Where place weight material still herself.","estimatedTime":"9 weeks","previewFileId":"bd9df495-22f7-467d-81f6-a086c12b804d","createdByUserId":"4cb62350-caf8-4720-9e9c-86c9ee6ae416"}'

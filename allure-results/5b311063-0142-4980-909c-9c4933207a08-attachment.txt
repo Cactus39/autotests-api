@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/exercises' \
+ -H 'host' : 'localhost:8000' \
+ -H 'accept' : '*/*' \
+ -H 'accept-encoding' : 'gzip, deflate' \
+ -H 'connection' : 'keep-alive' \
+ -H 'user-agent' : 'python-httpx/0.28.1' \
+ -H 'authorization' : 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTMxVDE4OjIyOjIwLjczNDEyMSIsInVzZXJfaWQiOiJmZmUzMDBiMi1kMmUyLTQ1OTktYmRlZC0yY2M5MjEwMTczYzIifQ._5Ah2Cd4DWTK9BX-wdXXkh4p4ApAjKwdwj4SXTjR9AQ' \
+ -H 'content-length' : '387' \
+ -H 'content-type' : 'application/json' \
+ -d '{"title":"Reveal citizen probably store dark account traditional.","courseId":"b1986c5c-6bc8-4850-b533-997bf623f4f8","maxScore":77,"minScore":2,"orderIndex":88,"description":"Report campaign would national. Return serious activity seem. Firm according buy section grow western Mrs.\nShare area compare choose book quality marriage. Both response imagine week.","estimatedTime":"1 weeks"}'

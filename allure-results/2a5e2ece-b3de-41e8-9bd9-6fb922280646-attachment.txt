@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host' : 'localhost:8000' \
+ -H 'accept' : '*/*' \
+ -H 'accept-encoding' : 'gzip, deflate' \
+ -H 'connection' : 'keep-alive' \
+ -H 'user-agent' : 'python-httpx/0.28.1' \
+ -H 'authorization' : 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAzLTMxVDE4OjIyOjIwLjE4Mzk3OCIsInVzZXJfaWQiOiJhMWEyZmY5OC1hMjk5LTQzYzktOTg5MS0wMWVkM2FmZGEyZjgifQ.G5QLQBAoQekEwY74NZG-3Wj0FG625io8z07u27omFdg' \
+ -H 'content-length' : '338' \
+ -H 'content-type' : 'application/json' \
+ -d '{"title":"Civil finish today.","maxScore":90,"minScore":2,"description":"Country sit however floor push. Discover leave size race since bill size. Course way bad another. School eye between subject.","estimatedTime":"1 weeks","previewFileId":"4c57e38b-1079-4397-9035-7d9593d1f34b","createdByUserId":"a1a2ff98-a299-43c9-9891-01ed3afda2f8"}'
